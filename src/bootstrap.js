@@ -5,11 +5,9 @@ const path = require("path");
 const mime = require("mime-types");
 const set = require("lodash.set");
 const {
-  categories,
   authors,
   articles,
   global,
-  about,
 } = require("../data/data.json");
 
 async function isFirstRun() {
@@ -194,26 +192,6 @@ async function importGlobal() {
   });
 }
 
-async function importAbout() {
-  const updatedBlocks = await updateBlocks(about.blocks);
-
-  await createEntry({
-    model: "about",
-    entry: {
-      ...about,
-      blocks: updatedBlocks,
-      // Make sure it's not a draft
-      publishedAt: Date.now(),
-    },
-  });
-}
-
-async function importCategories() {
-  for (const category of categories) {
-    await createEntry({ model: "category", entry: category });
-  }
-}
-
 async function importAuthors() {
   for (const author of authors) {
     const avatar = await checkFileExistsBeforeUpload([author.avatar]);
@@ -232,18 +210,14 @@ async function importSeedData() {
   // Allow read of application content types
   await setPublicPermissions({
     article: ["find", "findOne"],
-    category: ["find", "findOne"],
     author: ["find", "findOne"],
     global: ["find", "findOne"],
-    about: ["find", "findOne"],
   });
 
   // Create all entries
-  await importCategories();
   await importAuthors();
   await importArticles();
   await importGlobal();
-  await importAbout();
 }
 
 module.exports = async () => {
