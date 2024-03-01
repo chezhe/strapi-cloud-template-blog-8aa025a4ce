@@ -1,5 +1,8 @@
 const config = {
   locales: [
+    'zh-Hans',
+    'zh',
+    'en',
     // 'ar',
     // 'fr',
     // 'cs',
@@ -24,8 +27,6 @@ const config = {
     // 'tr',
     // 'uk',
     // 'vi',
-    // 'zh-Hans',
-    // 'zh',
   ],
 };
 
