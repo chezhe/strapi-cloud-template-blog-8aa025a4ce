@@ -812,6 +812,7 @@ export interface ApiArticleArticle extends Schema.CollectionType {
       'api::tag.tag'
     >;
     language: Attribute.Enumeration<['en', 'zh']>;
+    source: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
