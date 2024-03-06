@@ -919,6 +919,7 @@ export interface ApiTagTag extends Schema.CollectionType {
       'manyToMany',
       'api::article.article'
     >;
+    type: Attribute.Enumeration<['RUNE', 'DEX']>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
