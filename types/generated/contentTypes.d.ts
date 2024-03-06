@@ -920,6 +920,7 @@ export interface ApiTagTag extends Schema.CollectionType {
       'api::article.article'
     >;
     type: Attribute.Enumeration<['RUNE', 'DEX']>;
+    introduction: Attribute.RichText;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

@@ -27,6 +27,9 @@
         "RUNE",
         "DEX"
       ]
+    },
+    "introduction": {
+      "type": "richtext"
     }
   }
 }
