@@ -28,8 +28,8 @@
         "DEX"
       ]
     },
-    "link": {
-      "type": "string"
+    "introduction": {
+      "type": "richtext"
     }
   }
 }
