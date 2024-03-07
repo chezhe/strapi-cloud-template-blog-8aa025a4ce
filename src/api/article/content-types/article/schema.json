@@ -59,6 +59,9 @@
     },
     "source": {
       "type": "string"
+    },
+    "mark": {
+      "type": "boolean"
     }
   }
 }
