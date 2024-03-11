@@ -25,7 +25,8 @@
       "type": "enumeration",
       "enum": [
         "RUNE",
-        "DEX"
+        "DEX",
+        "OTHER"
       ]
     },
     "introduction": {
