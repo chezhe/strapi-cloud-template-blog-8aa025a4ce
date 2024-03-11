@@ -62,6 +62,9 @@
     },
     "mark": {
       "type": "boolean"
+    },
+    "relationId": {
+      "type": "biginteger"
     }
   }
 }
