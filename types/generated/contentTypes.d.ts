@@ -887,7 +887,7 @@ export interface ApiBlogBlog extends Schema.CollectionType {
     hero: Attribute.Media;
     slug: Attribute.UID<'api::blog.blog', 'title'>;
     source: Attribute.String;
-    publish: Attribute.Date;
+    publishDate: Attribute.Date;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
