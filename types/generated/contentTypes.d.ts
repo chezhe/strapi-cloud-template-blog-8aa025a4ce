@@ -815,6 +815,7 @@ export interface ApiArticleArticle extends Schema.CollectionType {
     source: Attribute.String;
     mark: Attribute.Boolean;
     relationId: Attribute.BigInteger;
+    recommend: Attribute.Boolean;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

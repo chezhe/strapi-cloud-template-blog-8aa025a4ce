@@ -65,6 +65,9 @@
     },
     "relationId": {
       "type": "biginteger"
+    },
+    "recommend": {
+      "type": "boolean"
     }
   }
 }
