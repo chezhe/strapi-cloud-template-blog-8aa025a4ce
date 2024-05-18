@@ -813,9 +813,9 @@ export interface ApiArticleArticle extends Schema.CollectionType {
     >;
     language: Attribute.Enumeration<['en', 'zh']>;
     source: Attribute.String;
-    mark: Attribute.Boolean;
+    mark: Attribute.Boolean & Attribute.Required;
     relationId: Attribute.BigInteger;
-    recommend: Attribute.Boolean;
+    recommend: Attribute.Boolean & Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

@@ -61,13 +61,15 @@
       "type": "string"
     },
     "mark": {
-      "type": "boolean"
+      "type": "boolean",
+      "required": true
     },
     "relationId": {
       "type": "biginteger"
     },
     "recommend": {
-      "type": "boolean"
+      "type": "boolean",
+      "required": true
     }
   }
 }
